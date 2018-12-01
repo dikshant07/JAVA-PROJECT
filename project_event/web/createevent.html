@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>| Create an Event</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<style>
+		*
+		{
+			font-family: Segoe UI;
+		}
+		legend
+		{
+			color: crimson;
+		}
+		td
+		{	
+			padding: 0px 10px 0px 10px;
+			width: 300px;
+		}
+		h3
+		{
+			text-align: right;
+		}
+		input
+		{
+			width: 250px;
+		}
+		button
+		{
+			border-radius: 2px;
+			background-color: crimson;
+			color: white;
+			font-size: 20px;
+			padding: 3px 3px 3px 3px;
+			margin: 0px 5px 5px 0px;
+		}
+		button:hover
+		{
+			background-color: green;
+		}
+		</style>
+		
+    </head>
+    <body bgcolor = "white">
+      
+        <div style = "background-color:white;padding: 0px 20px 20px 20px;">
+			<form action = "createevent.jsp" method="post">
+				<fieldset>
+					<legend align="center">
+						<h1> Create a New Event </h1>
+					</legend>
+					<center>
+					<table>
+						<tr>
+							<td>
+								<h3>Name of the Event : </h3>
+							</td>
+							<td>
+								<input type="text" placeholder="Name" name = "ename" id = "sname" autofocus required>
+							</td>
+						</tr>
+						
+						<tr>
+							<td>
+								<h3>Event ID : </h3>
+							</td>
+							<td>
+								<input type="text" placeholder="ID" name = "eid" id = "sid" onchange = "checkId()" required>
+							</td>
+						</tr>
+						
+						<tr>
+							<td>
+								<h3>Event Time : </h3>
+							</td>
+							<td>
+								<input type="text" placeholder="Enter time" name = "time" id = "time" required>
+							</td>
+						</tr>
+                                                <tr>
+                                                    <tr>
+							<td>
+								<h3>Event Date : </h3>
+							</td>
+							<td>
+								<input type="text" placeholder="Enter date" name = "date" id = "date" required>
+							</td>
+						</tr>
+                                                <tr>
+							<td>
+								<h3>Event Place : </h3>
+							</td>
+							<td>
+								<input type="text" placeholder="Enter place" name = "place" id = "place" required>
+							</td>
+						</tr>
+
+
+						<tr>
+							<td>
+								<h3>Contact No : </h3>
+							</td>
+							<td>
+								<input type="text" placeholder="Contact No." id = "tel" name = "tel" >
+							</td>
+						</tr>
+					</table>
+					<br>
+					<button type = "submit" id = "submit"> Submit </button><br>
+					<button type = "reset" id = "reset"> Reset Form </button><br>
+					<span id = "output" style = "visibility: hidden;color: red;">Hello</span>
+					</center>
+				</fieldset>
+			</form>
+		</div>
+    </body>
+</html>

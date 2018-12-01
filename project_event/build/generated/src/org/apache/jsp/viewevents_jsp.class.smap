@@ -1,0 +1,17 @@
+SMAP
+viewevents_jsp.java
+JSP
+*S JSP
+*F
++ 0 viewevents.jsp
+viewevents.jsp
+*L
+1,6:46
+7,8:53
+14,69:61
+82,3:130
+85,6:133,3
+91,17:151
+107,11:168
+117,7:179
+*E
